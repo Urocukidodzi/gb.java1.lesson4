@@ -53,8 +53,6 @@ public class Main {
             } else {
                 break;
             }
-            //try again
-
         }
     }
 
@@ -222,7 +220,7 @@ public class Main {
                     if (gameMap[i][j] == 'X' && gameMap[i - 1][j - 1] == 'X' && gameMap[i - 2][j - 2] != 'O' && gameMap[i - 2][j - 2] != 'X') {
                         gameMap[i - 2][j - 2] = 'O';
                         NoDanger = false;
-                                gameCount--;
+                        gameCount--;
                     }
                 }
             }
